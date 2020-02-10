@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>final css and html projet </title>
+</head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    nav {
+        background-color: #fd5e53;
+        position: fixed;
+        right: 0;
+        left: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0 1.5rem;
+        list-style: none;
+        padding: 1.5rem 1.5rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    nav ul li:hover {
+        background-color: brown;
+    }
+    /*first section*/
+    #welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    }
+
+    #welcome-section p {
+        color: #d45d79;
+    }
+
+    #welcome-section h1 {
+        color: white;
+        font-size: 5rem;
+    }
+
+    h3 {
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: underline;
+        padding: 4vh;
+        color: white;
+        font-size: xx-large;
+    }
+
+    img {
+        height: 40vh;
+        width: 30vw;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-rows: 25vw 25vw 25vw;
+        
+        grid-template-areas:
+            "first second third"
+            "fourth fifth sixth"
+        ;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4vh 0;
+
+    }
+
+    #projects {
+        background-color: #192965;
+    }
+
+    .tribute_page {
+        grid-area: first;
+
+
+    }
+
+    .random_quote_machine {
+        grid-area: second;
+    }
+
+    .javascript_calculator {
+        grid-area: third;
+    }
+
+    .map-data-across-the-globe {
+        grid-area: fourth;
+    }
+
+    .wikipedia_viewer {
+        grid-area: fifth;
+    }
+
+    .tic_tac_toe_game {
+        grid-area: sixth;
+    }
+
+    .projects-container p {
+        padding: 1rem;
+        text-align: center;
+        color: white;
+    }
+
+    .projects-container div {
+        background-color: #333333;
+    }
+
+    .projects-container p:before {
+        content: "<   ";
+        color: #333333;
+    }
+
+    .projects-container p:after {
+        content: "   />";
+        color: #333333;
+    }
+
+    .projects-container p:hover:after {
+        color: tomato;
+    }
+
+    .projects-container p:hover:before {
+        color: tomato;
+    }
+
+    .button {
+        text-align: center;
+        text-decoration: none;
+        margin: 0 auto;
+        padding: 10vh;
+    }
+
+    .button a {
+        text-decoration: none;
+        text-transform: none;
+        color: white;
+        padding: 1vw;
+        background-color: #333333;
+    }
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 10vh;
+    }
+
+    .container1 ul {
+        display: flex;
+
+        justify-content: center;
+        margin: 1vh;
+        padding: 10vh;
+    }
+
+    .container1 ul li {
+        margin: 0 auto;
+        list-style: none;
+    }
+
+    .container1 a {
+        text-decoration: none;
+        text-transform: none;
+        color: white;
+
+    }
+
+    #profile-link {
+        background-color: #706c61;
+        color: white;
+        border-bottom: 5px solid red;
+
+    }
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 10vh;
+        background-color: #706c61;
+        border-top: 5px solid red;
+    }
+    @media screen and (max-width:1200px){
+        .projects-container {
+        display: flex;
+        flex-direction: column;
+        }
+        
+    img {
+        height: 100%;
+        width: 100%;
+    }   
+    }
+
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <h1>Hey I am Mimic</h1>
+        <p>a web developer</p>
+    </section>
+    <section id="projects">
+        <h3>These are some of my projects</h3>
+        <div class="projects-container">
+            <div class="project-title tribute_page">
+                <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="blank_"><img
+                        src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg"
+                        alt="Dr. Norman Borlaug"></a>
+                <p>Tribute Page</p>
+            </div>
+            <div class="project-title random_quote_machine">
+                <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="blank_"><img
+                        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+                        alt="Dr. Norman Borlaug"></a>
+                <p>Random Quote Machine</p>
+            </div>
+            <div class="project-title javascript_calculator">
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="blank_"><img
+                        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+                        alt="Dr. Norman Borlaug"></a>
+                <p>Javascipt Calculator</p>
+            </div>
+            <div class="project-title map-data-across-the-globe">
+                <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="blank_"><img
+                        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+                        alt="Dr. Norman Borlaug"></a>
+                <p>Map Data Across The Globe</p>
+            </div>
+            <div class="project-title wikipedia_viewer">
+                <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="blank_"><img
+                        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+                        alt="Dr. Norman Borlaug"></a>
+                <p>wikipedia Viewer</p>
+            </div>
+            <div class="project-title tic_tac_toe_game">
+                <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="blank_"><img
+                        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+                        alt="Dr. Norman Borlaug"></a>
+                <p>Tic Tac Toe Game</p>
+            </div>
+        </div>
+        <div class="button">
+            <a href="https://codepen.io/FreedeCamp/">Show All ></a>
+        </div>
+    </section>
+    <section id="profile-link">
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
+        <div class="container1">
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                    <a href="https://www.facebook.com/freecodecamp">facebook</a>
+                </li>
+                <li>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/freecodecamp">github</a>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://twitter.com/freecodecamp">twitter</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope-square"></i>
+                    <a href="">email</a>
+                </li>
+                <li>
+                    <i class="fas fa-mobile-alt"></i>
+                    <a href="mailto:example@example.com">call me</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+     <p>© Created free <a href="https://www.freecodecamp.com/">Codecamp</a></p>
+    </footer>
+</body>
+
+</html>
